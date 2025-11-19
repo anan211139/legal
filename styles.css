@@ -707,7 +707,16 @@ canvas {
   box-shadow: 0 0 12px rgba(37, 99, 235, 0.5);
 }
 
-
+.timeline-reason {
+    margin-top: 6px;
+    padding: 10px 12px;
+    background: #fef6ff;       /* สีเทาอ่อน */
+    border: 1px solid #c9b2f6; /* กรอบสีเทา */
+    border-radius: 8px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.5;
+}
 
 /* Responsive */
 @media (max-width: 1100px) {

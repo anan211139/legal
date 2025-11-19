@@ -75,20 +75,35 @@ function showDetail(c) {
     //   </div>`;
     // });
     // document.getElementById("tab-timeline").innerHTML = timelineHTML;
+
+
+
     let timelineHTML = `<div class="vertical-timeline">`;
 
     c.timeline.forEach(t => {
         timelineHTML += `
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">${t.date}</div>
-            <div class="timeline-text">${t.label}</div>
-        </div>
-        `;
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">${t.date}</div>
+        <div class="timeline-text">${t.label}</div>
+        ${t.reason ? `<div class="timeline-reason">${t.reason}</div>` : ""}
+    </div>
+    `;
     });
+
 
     timelineHTML += `</div>`;
     document.getElementById("tab-timeline").innerHTML = timelineHTML;
+
+    // let timelineHTML = "";
+    // c.timeline.forEach(t => {
+    //     timelineHTML += `
+    //   <div class="timeline-step">
+    //     <strong>${t.label}:</strong> ${t.date}
+    //     ${t.reason ? `<div class="timeline-reason">${t.reason}</div>` : ""}
+    //   </div>`;
+    // });
+    // document.getElementById("tab-timeline").innerHTML = timelineHTML;
 
 
     // show card

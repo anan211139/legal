@@ -45,7 +45,7 @@
                     <div class="topbar-sub">ภาพรวมคดีวินัยข้าราชการ และสถานะความคืบหน้าของคดี</div>
                 </div>
                 <div class="topbar-right">
-                    <div class="pill">ปีงบประมาณ 2568</div>
+                    <div class="pill">ปีงบประมาณ 2569</div>
                     <!-- <div class="avatar-chip">
                         <div class="avatar"></div>
                         <span class="avatar-name">ผอ.กองวินัย</span>
@@ -53,22 +53,22 @@
                 </div>
             </div>
 
-            <div class="content">
+              <div class="content" style="grid-template-columns:unset">
                 <!-- LEFT: main content -->
                 <section class="content-main">
                     <!-- KPIs -->
                     <div class="kpi-grid">
                         <div class="card kpi-card">
-                            <div class="kpi-chip">+12 คดีใหม่</div>
+                            <div class="kpi-chip">+2 คดีใหม่</div>
                             <div class="kpi-label">คดีทั้งหมด</div>
-                            <div class="kpi-value" id="kpi-total">128</div>
+                            <div class="kpi-value" id="kpi-total">47</div>
                             <div class="kpi-tag">รวมทุกประเภทความผิด</div>
                         </div>
                         <div class="card kpi-card">
                             <!-- <div class="kpi-chip red">ขยายอายุความ : 3</div> -->
                             <div class="kpi-label">คดีที่อยู่ระหว่างสอบสวน</div>
-                            <div class="kpi-value" id="kpi-overdue">14</div>
-                            <div class="kpi-tag red">ขยายอายุความ : 3</div>
+                            <div class="kpi-value" id="kpi-overdue">47</div>
+                            <div class="kpi-tag red">ขยายอายุความ : 0</div>
                         </div>
                         <!-- <div class="card kpi-card">
                             
@@ -79,13 +79,13 @@
                         <div class="card kpi-card">
                             <div class="kpi-chip yellow">1 ปี</div>
                             <div class="kpi-label">ใกล้หมดอายุความ</div>
-                            <div class="kpi-value" id="kpi-near-expiry">6</div>
+                            <div class="kpi-value" id="kpi-near-expiry">0</div>
                             <div class="kpi-tag">ต้องติดตามอย่างใกล้ชิด</div>
                         </div>
                         <div class="card kpi-card">
                             <!-- <div class="kpi-chip">เดือนนี้</div> -->
                             <div class="kpi-label">ปิดคดีสำเร็จ</div>
-                            <div class="kpi-value" id="kpi-closed">21</div>
+                            <div class="kpi-value" id="kpi-closed">0</div>
                             <!-- <div class="kpi-tag">ปิดคดีแล้วในรอบเดือน</div> -->
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                             <div class="card-header-row">
                                 <div>
                                     <div class="card-title">สัดส่วนโทษทางวินัย</div>
-                                    <div class="card-subtitle">ตาม 5 ประเภทโทษ</div>
+                                    <!-- <div class="card-subtitle">ตาม 5 ประเภทโทษ</div> -->
                                 </div>
                             </div>
                             <canvas id="penaltyDonutChart"></canvas>
@@ -141,131 +141,7 @@
 
 
 
-                    <!-- Timeline summary table + mini gantt -->
-                    <div class="">
-                        <div class="card">
-                            <div class="card-header-row">
-                                <div>
-                                    <div class="card-title">คดีที่กำลังดำเนินการ - 3 คดี</div>
-                                    <div class="card-subtitle">Timeline การดำเนินการ</div>
-                                </div>
-                            </div>
-                            <div class="gantt-wrapper">
-
-
-                                <!-- LEFT FIXED COLUMN -->
-                                <div class="gantt-left">
-                                    <div style="height:34px;"></div>
-                                    <div class="case-name">คดี 6</div>
-                                    <div class="case-name">คดี 7</div>
-                                    <div class="case-name">คดี 9</div>
-                                </div>
-
-                                <!-- RIGHT SCROLLABLE -->
-                                <div class="gantt-right">
-                                    <div class="gantt-grid">
-
-                                        <!-- HEADER: YEAR 2568 ONLY -->
-                                        <div class="gantt-header" style="grid-row:1; grid-column:1;"></div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:2;">ม.ค.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:3;">ก.พ.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:4;">มี.ค.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:5;">เม.ย.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:6;">พ.ค.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:7;">มิ.ย.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:8;">ก.ค.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:9;">ส.ค.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:10;">ก.ย.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:11;">ต.ค.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:12;">พ.ย.</div>
-                                        <div class="gantt-month" style="grid-row:1; grid-column:13;">ธ.ค.</div>
-
-
-
-                                        <!-- ===========================================================
-                 ROW 2 — คดี 6 (แสดงเฉพาะเหตุการณ์ปี 2568)
-            ============================================================ -->
-
-                                        <!-- ม.ค. 2568 — ส่งเรื่องให้ ก.ก. -->
-                                        <div class="gantt-bar g-yellow" style="grid-row:2; grid-column:2 / span 1;">
-                                            ส่งเรื่องให้ ก.ก.
-                                        </div>
-
-                                        <!-- เม.ย. 2568 — ประชุม อ.ก.ก. -->
-                                        <div class="gantt-bar g-green" style="grid-row:2; grid-column:5 / span 1;">
-                                            ประชุม อ.ก.ก.
-                                        </div>
-
-
-
-                                        <!-- ===========================================================
-                 ROW 3 — คดี 7 (เฉพาะปี 2568)
-            ============================================================ -->
-
-                                        <!-- พ.ค. 2568 — รายงานสอบสวนเพิ่มเติม -->
-                                        <div class="gantt-bar g-purple" style="grid-row:3; grid-column:6 / span 1;">
-                                            รายงานเพิ่มเติม
-                                        </div>
-
-                                        <!-- มิ.ย. 2568 — ประชุม 6/2567 -->
-                                        <div class="gantt-bar g-green" style="grid-row:3; grid-column:7 / span 1;">
-                                            ประชุม 6/2567
-                                        </div>
-
-                                        <!-- ต.ค. 2568 — ประชุม 10/2567 -->
-                                        <div class="gantt-bar g-red" style="grid-row:3; grid-column:11 / span 1;">
-                                            ประชุม 10/2567
-                                        </div>
-
-
-
-                                        <!-- ===========================================================
-     ROW 4 — คดี 9 (เฉพาะปี 2568)
-============================================================ -->
-
-                                        <!-- 1) ประชุมครั้งแรก / ครบกำหนด 120 วัน -->
-                                        <div class="gantt-bar g-green" style="grid-row:4; grid-column:2 / span 4;">
-                                            ประชุมครั้งแรก (ครบ 120 วัน)
-                                        </div>
-
-                                        <!-- 2) ขอขยายเวลา ครั้งที่ 1 (60 วัน) -->
-                                        <div class="gantt-bar g-purple" style="grid-row:4; grid-column:5 / span 3;">
-                                            ขอขยายเวลา ครั้งที่ 1
-                                        </div>
-
-                                        <!-- 3) ขอขยายเวลา ครั้งที่ 2 (60 วัน) -->
-                                        <div class="gantt-bar g-purple" style="grid-row:4; grid-column:7 / span 3;">
-                                            ขอขยายเวลา ครั้งที่ 2
-                                        </div>
-
-                                        <!-- 4) ขอขยายเวลา ครั้งที่ 3 (60 วัน) -->
-                                        <div class="gantt-bar g-purple" style="grid-row:4; grid-column:9 / span 3;">
-                                            ขอขยายเวลา ครั้งที่ 3
-                                        </div>
-
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <!-- Legend -->
-                            <div class="legend">
-                                <div class="legend-item">
-                                    <div class="legend-color" style="background:#22c55e;"></div> เขียว = ภายในกำหนด
-                                </div>
-                                <div class="legend-item">
-                                    <div class="legend-color" style="background:#facc15;"></div> เหลือง = ใกล้ครบกำหนด
-                                </div>
-                                <div class="legend-item">
-                                    <div class="legend-color" style="background:#ef4444;"></div> แดง = เกินกำหนด
-                                </div>
-                                <div class="legend-item">
-                                    <div class="legend-color" style="background:#a855f7;"></div> ม่วง = ขอขยายเวลา
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              
                     <div class="card">
                         <div class="card-header-row">
                             <div>
@@ -286,7 +162,7 @@
                             </thead>
                             <tbody></tbody>
                         </table>
-                        <div id="case-detail-card" class="expand-card card" style="display:none; margin-top: 16px;">
+                        <!-- <div id="case-detail-card" class="expand-card card" style="display:none; margin-top: 16px;">
                             <div id="case-detail-title" class="card-title" style="margin:8px 0px;"></div>
 
                             <div class="tab-header">
@@ -298,7 +174,7 @@
                             <div id="tab-detail" class="tab-content active"></div>
                             <div id="tab-result" class="tab-content"></div>
                             <div id="tab-timeline" class="tab-content"></div>
-                        </div>
+                        </div> -->
                     </div>
 
 
@@ -366,64 +242,7 @@
                     </div>-->
                 </section>
 
-                <!-- RIGHT: alerts + donut + risk list -->
-                <aside class="content-right">
-                    <!-- Recommended / Alert -->
-                    <div class="rec-card">
-                        <div class="rec-title">คดีเสี่ยงหมดอายุความ!</div>
-                        <div class="rec-text">
-                            มีคดีวินัยอย่างร้ายแรง 3 คดี ที่จะครบอายุความภายใน 30 วัน
-                        </div>
-                        <!-- <button class="btn-main">ดูคดีที่ต้องเร่ง</button>
-                            <div class="mini-label" style="margin-top:8px;">แนะนำให้เร่งรัดสรุปสำนวนภายในสิ้นเดือนนี้
-                            </div> -->
-                    </div>
-
-                    <!-- Donut on right (same data)
-                        <div class="card">
-                            <div class="card-header-row">
-                                <div>
-                                    <div class="card-title">ภาพรวมโทษร้ายแรง</div>
-                                    <div class="card-subtitle">ปลดออก vs ไล่ออก</div>
-                                </div>
-                            </div>
-                            <canvas id="severeDonutChart"></canvas>
-                        </div> -->
-
-                    <!-- Risk ranking
-                        <div class="card">
-                            <div class="card-header-row">
-                                <div>
-                                    <div class="card-title">Top 5 คดีที่มีความเสี่ยงสูงสุด</div>
-                                    <div class="card-subtitle">
-                                        เรียงตามคะแนนความเสี่ยงจากเส้นเวลาและจำนวนครั้งการขยายเวลา
-                                    </div>
-                                </div>
-                            </div>
-                            <canvas id="riskScoreChart"></canvas>
-                        </div> -->
-
-                    <!-- Small list -->
-                    <div class="card">
-                        <div class="card-title">คดีที่ต้องจับตา (สัปดาห์นี้)</div>
-                        <ul class="right-list">
-                            <li>
-                                <span>001/2568 – สำนักการคลัง</span>
-                                <span class="badge-deadline">เกินกำหนด</span>
-                            </li>
-                            <li>
-                                <span>014/2568 – เขตบางเขน</span>
-                                <span class="badge-deadline" style="background:#fef3c7;color:#92400e;">เหลือ 12
-                                    วัน</span>
-                            </li>
-                            <li>
-                                <span>039/2568 – เขตปทุมวัน</span>
-                                <span class="badge-deadline" style="background:#e0f2fe;color:#075985;">ขอขยายครั้งที่
-                                    3</span>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
+                
             </div>
         </main>
     </div>
